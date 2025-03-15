@@ -1,0 +1,45 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#selecionar{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+#gameselection{
+    margin: auto;
+    background-color: aqua;
+    width: 80%;
+    height: 700px;
+    border-radius: 10px;
+    position: relative;
+}
+body{
+    background-image: url(https://jogoveio.com.br/wp-content/uploads/2024/03/thumb-godshard-chronicles.jpg);
+    background-size: 100%;
+}
+#nomeperso1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    height: 200px;
+    text-align: center;
+}
+#nomeperso2{
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 200px;
+    text-align: center;
+}
+.nome{
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    height: 50px;
+    font-size: 40px;
+
+}
