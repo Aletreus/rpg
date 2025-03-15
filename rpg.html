@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="guerreiro.css">
 </head>
 <body>
-    <main id="player1">
-        <h2 id="nomep1">Nome</h2>
-        <h2 id="hpp1">HP 100/100</h2>
-        <h2 id="atkp1">Atk:</h2>
-        <h2 id="defp1">Def:</h2>
-        <input type="button" value="Ataque Básico" id="ataquebasico">
-    </main>
-    <main id="player2"> 
-        <h2 id="nomep2">Nome</h2>
-        <h2 id="hpp2">HP 100/100</h2>
-        <h2 id="atkp2">Atk:</h2>
-        <h2 id="defp2">Def:</h2>
-        <input type="button" value="Ataque Básico" id="ataquebasico" onclick="player1.slash(player2)">
-    <script src="guerreiro.js"></script>
-    
+    <div id="gamepad">
+        <main id="player1" class="menu">
+            <h2 id="nomep1">Nome</h2>
+            <h2 id="hpp1" class="hp">HP 100/100</h2>
+            <h2 id="atkp1" class="atk">Atk:</h2>
+            <h2 id="defp1" class="def">Def:</h2>
+            <input type="button" value="Ataque Básico" onclick="player1.slash(player2)" class="ataquebasico">
+            <input type="button" value="Life Potion 🧪" onclick="player1.lifepotion(player1)" class="lifepotion">
+            <input type="button" value="Buff 🔆" onclick="player1.buffdamage(player1)" class="buff"> 
+            <input type="button" value="Shield" onclick="player1.shield(player1)" class="shield"> 
+        </main><img src="../rpgAlemao/PF_Ken(2).gif" alt="" id="personagem">
+        <p></p>
+        <main id="player2" class="menu"> 
+            <h2 id="nomep2">Nome</h2>
+            <h2 id="hpp2" class="hp">HP 100/100</h2>
+            <h2 id="atkp2" class="atk">Atk:</h2>
+            <h2 id="defp2" class="def">Def:</h2>
+            <input type="button" value="Ataque Básico" onclick="player2.slash(player1)" class="ataquebasico">
+            <input type="button" value="Life Potion 🧪" onclick="player2.lifepotion(player2)" class="lifepotion">
+            <input type="button" value="Buff 🔆" onclick="player2.buffdamage(player2)" class="buff">
+            <input type="button" value="Shield" onclick="player2.shield(player2)" class="shield">
+        </main>
+        <script src="guerreiro.js"></script>
+        <img src="../rpgAlemao/PF_Ken.gif" alt="" id="personagem2">
+    </div>
 </body>
 </html>
